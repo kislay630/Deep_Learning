@@ -1,16 +1,16 @@
-__author__ = 'Shadab Shaikh, Obaid Kazi, Ansari Mohd Adnan'
 
-from PyQt5 import QtWidgets, uic
+from PyQt5 import QtWidgets
+from PyQt5 import uic
 from PyQt5.QtWidgets import QMessageBox
 from PyQt5.QtCore import QUrl
 from PyQt5.QtGui import QImage
 from PyQt5.QtGui import QPixmap
 from PyQt5 import QtCore						#importing pyqt5 libraries
-from scipy.ndimage import imread				#will help in reading the images
-from PyQt5.QtCore import QTimer,Qt 
-from PyQt5 import QtGui							
+from imageio import imread                      #will help in reading the images
+from PyQt5.QtCore import QTimer,Qt
+from PyQt5 import QtGui
 from tkinter import filedialog					#for file export module
-from tkinter import * 
+from tkinter import *
 import tkinter as tk
 from matplotlib import pyplot as plt 			#for gesture viewer
 from matplotlib.widgets import Button
@@ -20,7 +20,7 @@ import cv2										#for the camera operations
 import numpy as np 								#proceesing on images
 import qimage2ndarray 							#convers images into matrix
 import win32api
-import winGuiAuto			
+import winGuiAuto
 import win32gui
 import win32con									#for removing title cv2 window and always on top
 import keyboard									#for pressing keys
